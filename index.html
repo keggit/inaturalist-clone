@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>inaturalist clone</title>
+    <link type="text/css" rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,500,700|Google+Sans:400,500,700">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="ui borderless topbar menu">
+        <a class="fitted item"><img class="ui image item" style="height: 45px;"
+                src="https://static.inaturalist.org/sites/1-logo.svg?1573071870"></a>
+        <a class="fitted item"><i class="inverted circular search link icon green"></i></a>
+        <a class="fitted item">Explore</i></a>
+        <div class="ui dropdown fitted item">
+            <div class="text">Community</div>
+            <i class="angle down icon"></i>
+            <div class="menu">
+                <div class="item">People</div>
+                <div class="item">Projects</div>
+                <div class="item">Journal Posts</div>
+                <div class="item">Forum</div>
+
+            </div>
+        </div>
+        <div class="ui dropdown fitted item">
+            <div class="text">More</div>
+            <i class="dropdown icon"></i>
+            <div class="menu">
+                <div class="item">Taxa Info</div>
+                <div class="item">Guides</div>
+                <div class="item">Places</div>
+                <div class="item">Site Stats</div>
+                <div class="item">Help</div>
+                <div class="item">Video Tutorials</div>
+                <div class="item">Managing Projects</div>
+                <div class="item">Teacher's Guide</div>
+
+            </div>
+        </div>
+        <a class="fitted right item">Log In</a>
+        <div class="fitted item">or</div>
+        <a class="fitted item">Sign Up</a>
+    </div>
+
+    <div class="ui borderless second menu">
+        <div class="ui container">
+            <div class="fitted bigger item">Observations</div>
+            <div class="fitted right med item"><i class="search icon"></i></div>
+            <div class="fitted item">
+                <div class="ui labeled input">
+                    <input type="text" placeholder="Species">
+                </div>
+            </div>
+            <div class="fitted item">
+                <div class="ui labeled input">
+                    <input type="text" placeholder="Location">
+                </div>
+            </div>
+            <div class="fitted item">
+                <button class="ui button orange">Go</button>
+            </div>
+            <div class="fitted item">
+                <button class="ui button dark gray"><i class="sliders horizontal icon"></i>Filters</button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="ui borderless third menu">
+        <div class="ui container">
+            <div class="fitted med item">The World</div>
+            <div class="fitted right item green">
+                <div class="ui padded list">
+                    <div class="fitted big item">58,302,751</div>
+                    <div class="fitted med item">OBSERVATIONS</div>
+                </div>
+            </div>
+            <div class="fitted item">
+                <div class="ui list">
+                    <div class="fitted big item">320,657</div>
+                    <div class="fitted med item">SPECIES<i class="arrow right icon gray"></i></div>
+                </div>
+            </div>
+            <div class="vl"></div>
+            <div class="fitted item">
+                <div class="ui list">
+                    <div class="fitted big item">177,302</div>
+                    <div class="fitted med item">IDENTIFIERS<i class="arrow right icon gray"></i></div>
+                </div>
+            </div>
+            <div class="vl"></div>
+            <div class="fitted item">
+                <div class="ui list">
+                    <div class="fitted big item">1,466,381</div>
+                    <div class="fitted med item"></div>
+                    <div class="fitted med item">OBSERVERS<i class="arrow right icon gray"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <img class="ui fluid image" src="map.png" alt="interactive map">
+
+    <div class="footer">
+        <div class="ui six column grid container">
+            <div class="column">
+                <div class="ui list">
+                    <div class="item">About</div>
+                    <div class="item">Help</div>
+                    <div class="item">Forum</div>
+                    <div class="item">Press</div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="ui list">
+                    <div class="item">Our Blog</div>
+                    <div class="item">Community Guidelines</div>
+                    <div class="item">Terms of Service</div>
+                    <div class="item">Privacy</div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="ui list">
+                    <div class="item"> <button class="ui button olive">DONATE</button>
+                    </div>
+                    <div class="item"> <button class="ui button olive">STORE</button>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="ui list">
+                    <img style="height: 40px;"
+                        src="https://static.inaturalist.org/wiki_page_attachments/412-original.png"
+                        alt="see the app on google play">
+                    <img style="height: 40px;"
+                        src="https://static.inaturalist.org/wiki_page_attachments/414-original.png"
+                        alt="see the app on the app store">
+                </div>
+            </div>
+            <div class="column">
+                <img style="height: 60px;" src="https://static.inaturalist.org/wiki_page_attachments/1378-original.svg"
+                    alt="california academy of science">
+            </div>
+            <div class="column">
+                <img style="height: 60px;" src="https://static.inaturalist.org/wiki_page_attachments/922-original.svg"
+                    alt="nat geo">
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+<script>
+    $('.ui.dropdown')
+        .dropdown()
+        ;
+</script>
+
+</html>
